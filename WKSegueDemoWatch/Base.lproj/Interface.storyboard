@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WKSegueDemoWatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="5vR-rl-UjG"/>
+                        <button width="1" alignment="left" title="Button" id="4SA-Go-1mM">
+                            <connections>
+                                <action selector="btnNew" destination="AgC-eL-Hgc" id="bbK-VV-uIM"/>
+                                <segue destination="Ozn-GU-iOK" kind="push" identifier="pushSegue" id="SOK-Sf-7NO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblTitle" destination="5vR-rl-UjG" id="MOE-a4-OS1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--new-->
+        <scene sceneID="bbB-d6-aFl">
+            <objects>
+                <controller identifier="new" hidesWhenLoading="NO" id="Ozn-GU-iOK" customClass="newInterfaceController" customModule="WKSegueDemoWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="DK6-ac-Tu5"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblNew" destination="DK6-ac-Tu5" id="0V9-Ki-Pci"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WKSegueDemoWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

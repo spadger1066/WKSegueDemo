@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - WKSegueDemoWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>WKSegueDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>WKSegueDemoWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>DCAD69381BD0177600D5A7FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCAD69491BD0179500D5A7FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

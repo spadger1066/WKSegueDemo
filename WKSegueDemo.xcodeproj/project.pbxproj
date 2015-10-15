@@ -13,6 +13,15 @@
 		DCAD69301BD0177600D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD692F1BD0177600D5A7FB /* Assets.xcassets */; };
 		DCAD69331BD0177600D5A7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69311BD0177600D5A7FB /* LaunchScreen.storyboard */; };
 		DCAD693E1BD0177600D5A7FB /* WKSegueDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD693D1BD0177600D5A7FB /* WKSegueDemoTests.swift */; };
+		DCAD694E1BD0179500D5A7FB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD694C1BD0179500D5A7FB /* Interface.storyboard */; };
+		DCAD69501BD0179500D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD694F1BD0179500D5A7FB /* Assets.xcassets */; };
+		DCAD69571BD0179500D5A7FB /* WKSegueDemoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCAD69561BD0179500D5A7FB /* WKSegueDemoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCAD695E1BD0179500D5A7FB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD695D1BD0179500D5A7FB /* InterfaceController.swift */; };
+		DCAD69601BD0179500D5A7FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD695F1BD0179500D5A7FB /* ExtensionDelegate.swift */; };
+		DCAD69621BD0179500D5A7FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69611BD0179500D5A7FB /* NotificationController.swift */; };
+		DCAD69641BD0179500D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69631BD0179500D5A7FB /* Assets.xcassets */; };
+		DCAD69681BD0179500D5A7FB /* WKSegueDemoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCAD694A1BD0179500D5A7FB /* WKSegueDemoWatch.app */; };
+		DCAD69721BD0189D00D5A7FB /* newInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69711BD0189D00D5A7FB /* newInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +32,46 @@
 			remoteGlobalIDString = DCAD69241BD0177600D5A7FB;
 			remoteInfo = WKSegueDemo;
 		};
+		DCAD69581BD0179500D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD691D1BD0177600D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD69551BD0179500D5A7FB;
+			remoteInfo = "WKSegueDemoWatch Extension";
+		};
+		DCAD69661BD0179500D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD691D1BD0177600D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD69491BD0179500D5A7FB;
+			remoteInfo = WKSegueDemoWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCAD696C1BD0179500D5A7FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCAD69571BD0179500D5A7FB /* WKSegueDemoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD69701BD0179500D5A7FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCAD69681BD0179500D5A7FB /* WKSegueDemoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DCAD69251BD0177600D5A7FB /* WKSegueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKSegueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +84,18 @@
 		DCAD69391BD0177600D5A7FB /* WKSegueDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKSegueDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD693D1BD0177600D5A7FB /* WKSegueDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKSegueDemoTests.swift; sourceTree = "<group>"; };
 		DCAD693F1BD0177600D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD694A1BD0179500D5A7FB /* WKSegueDemoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKSegueDemoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD694D1BD0179500D5A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCAD694F1BD0179500D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD69511BD0179500D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD69561BD0179500D5A7FB /* WKSegueDemoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WKSegueDemoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD695C1BD0179500D5A7FB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCAD695D1BD0179500D5A7FB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCAD695F1BD0179500D5A7FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCAD69611BD0179500D5A7FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCAD69631BD0179500D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD69651BD0179500D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD69711BD0189D00D5A7FB /* newInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD69531BD0179500D5A7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +128,8 @@
 			children = (
 				DCAD69271BD0177600D5A7FB /* WKSegueDemo */,
 				DCAD693C1BD0177600D5A7FB /* WKSegueDemoTests */,
+				DCAD694B1BD0179500D5A7FB /* WKSegueDemoWatch */,
+				DCAD695A1BD0179500D5A7FB /* WKSegueDemoWatch Extension */,
 				DCAD69261BD0177600D5A7FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +139,8 @@
 			children = (
 				DCAD69251BD0177600D5A7FB /* WKSegueDemo.app */,
 				DCAD69391BD0177600D5A7FB /* WKSegueDemoTests.xctest */,
+				DCAD694A1BD0179500D5A7FB /* WKSegueDemoWatch.app */,
+				DCAD69561BD0179500D5A7FB /* WKSegueDemoWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +167,38 @@
 			path = WKSegueDemoTests;
 			sourceTree = "<group>";
 		};
+		DCAD694B1BD0179500D5A7FB /* WKSegueDemoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD694C1BD0179500D5A7FB /* Interface.storyboard */,
+				DCAD694F1BD0179500D5A7FB /* Assets.xcassets */,
+				DCAD69511BD0179500D5A7FB /* Info.plist */,
+			);
+			path = WKSegueDemoWatch;
+			sourceTree = "<group>";
+		};
+		DCAD695A1BD0179500D5A7FB /* WKSegueDemoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD695D1BD0179500D5A7FB /* InterfaceController.swift */,
+				DCAD69711BD0189D00D5A7FB /* newInterfaceController.swift */,
+				DCAD695F1BD0179500D5A7FB /* ExtensionDelegate.swift */,
+				DCAD69611BD0179500D5A7FB /* NotificationController.swift */,
+				DCAD69631BD0179500D5A7FB /* Assets.xcassets */,
+				DCAD69651BD0179500D5A7FB /* Info.plist */,
+				DCAD695B1BD0179500D5A7FB /* Supporting Files */,
+			);
+			path = "WKSegueDemoWatch Extension";
+			sourceTree = "<group>";
+		};
+		DCAD695B1BD0179500D5A7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD695C1BD0179500D5A7FB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +209,12 @@
 				DCAD69211BD0177600D5A7FB /* Sources */,
 				DCAD69221BD0177600D5A7FB /* Frameworks */,
 				DCAD69231BD0177600D5A7FB /* Resources */,
+				DCAD69701BD0179500D5A7FB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCAD69671BD0179500D5A7FB /* PBXTargetDependency */,
 			);
 			name = WKSegueDemo;
 			productName = WKSegueDemo;
@@ -134,6 +239,40 @@
 			productReference = DCAD69391BD0177600D5A7FB /* WKSegueDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DCAD69491BD0179500D5A7FB /* WKSegueDemoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD696D1BD0179500D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueDemoWatch" */;
+			buildPhases = (
+				DCAD69481BD0179500D5A7FB /* Resources */,
+				DCAD696C1BD0179500D5A7FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAD69591BD0179500D5A7FB /* PBXTargetDependency */,
+			);
+			name = WKSegueDemoWatch;
+			productName = WKSegueDemoWatch;
+			productReference = DCAD694A1BD0179500D5A7FB /* WKSegueDemoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCAD69551BD0179500D5A7FB /* WKSegueDemoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD69691BD0179500D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueDemoWatch Extension" */;
+			buildPhases = (
+				DCAD69521BD0179500D5A7FB /* Sources */,
+				DCAD69531BD0179500D5A7FB /* Frameworks */,
+				DCAD69541BD0179500D5A7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WKSegueDemoWatch Extension";
+			productName = "WKSegueDemoWatch Extension";
+			productReference = DCAD69561BD0179500D5A7FB /* WKSegueDemoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +284,18 @@
 				TargetAttributes = {
 					DCAD69241BD0177600D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 					DCAD69381BD0177600D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = DCAD69241BD0177600D5A7FB;
+					};
+					DCAD69491BD0179500D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
+					};
+					DCAD69551BD0179500D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
@@ -167,6 +314,8 @@
 			targets = (
 				DCAD69241BD0177600D5A7FB /* WKSegueDemo */,
 				DCAD69381BD0177600D5A7FB /* WKSegueDemoTests */,
+				DCAD69491BD0179500D5A7FB /* WKSegueDemoWatch */,
+				DCAD69551BD0179500D5A7FB /* WKSegueDemoWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +335,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD69481BD0179500D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69501BD0179500D5A7FB /* Assets.xcassets in Resources */,
+				DCAD694E1BD0179500D5A7FB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD69541BD0179500D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69641BD0179500D5A7FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +375,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD69521BD0179500D5A7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69621BD0179500D5A7FB /* NotificationController.swift in Sources */,
+				DCAD69601BD0179500D5A7FB /* ExtensionDelegate.swift in Sources */,
+				DCAD69721BD0189D00D5A7FB /* newInterfaceController.swift in Sources */,
+				DCAD695E1BD0179500D5A7FB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +393,16 @@
 			isa = PBXTargetDependency;
 			target = DCAD69241BD0177600D5A7FB /* WKSegueDemo */;
 			targetProxy = DCAD693A1BD0177600D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD69591BD0179500D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD69551BD0179500D5A7FB /* WKSegueDemoWatch Extension */;
+			targetProxy = DCAD69581BD0179500D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD69671BD0179500D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD69491BD0179500D5A7FB /* WKSegueDemoWatch */;
+			targetProxy = DCAD69661BD0179500D5A7FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -234,6 +421,14 @@
 				DCAD69321BD0177600D5A7FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAD694C1BD0179500D5A7FB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD694D1BD0179500D5A7FB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKSegueDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueDemo;
@@ -335,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKSegueDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueDemo;
@@ -366,6 +563,68 @@
 			};
 			name = Release;
 		};
+		DCAD696A1BD0179500D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WKSegueDemoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD696B1BD0179500D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WKSegueDemoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DCAD696E1BD0179500D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKSegueDemoWatch_Extension;
+				INFOPLIST_FILE = WKSegueDemoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD696F1BD0179500D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKSegueDemoWatch_Extension;
+				INFOPLIST_FILE = WKSegueDemoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +650,22 @@
 			buildConfigurations = (
 				DCAD69461BD0177600D5A7FB /* Debug */,
 				DCAD69471BD0177600D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD69691BD0179500D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueDemoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD696A1BD0179500D5A7FB /* Debug */,
+				DCAD696B1BD0179500D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD696D1BD0179500D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueDemoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD696E1BD0179500D5A7FB /* Debug */,
+				DCAD696F1BD0179500D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
